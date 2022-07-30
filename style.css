@@ -12,8 +12,27 @@ section {
     justify-content: space-between;
 }
 
-input[type="number"] {
+input[type = "number"] {
     width: 15rem;
     padding: 5px;
     border: 2px solid black;
+    margin-right: 2rem;
+}
+
+button{
+    padding: 0.5rem;
+    background-color: rgba(207, 202, 203, 0.888);
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgba(163, 163, 163, 0.888);
+}
+
+.entered-number {
+    font-weight: 500;
+    font-size: 1.3rem;
 }
