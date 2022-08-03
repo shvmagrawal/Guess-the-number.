@@ -14,12 +14,12 @@ const totalAttempts = 5;
 
 
     input.addEventListener("keypress", function(e) {
-        if (e.key === "Enter" && attemptNum < totalAttempts) {
+        if (e.key === "Enter" && attemptNum <= totalAttempts) {
           guessed = input.value;
           check()
           attemptNum++;
         }    
-        else if (e.key === "Enter" && attemptNum >= totalAttempts) {
+        else if ( attemptNum > totalAttempts) {
          guesses.innerHTML =  `You loose, restart the game to play again.The right answer was ${randomNumber}`;
          guesses.style.color = "blue";
          input.disabled = true;
